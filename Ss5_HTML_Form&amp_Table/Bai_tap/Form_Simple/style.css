@@ -1,0 +1,60 @@
+html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #d5feff;
+}
+
+.Container {
+    width: 850px;
+    height: 350px;
+    background: #fff;
+    box-shadow: 1px 1px 2px #333333;
+}
+
+.TitleContent {
+    text-align: center;
+    background-color: #ff4c00;
+    color: #ffffff;
+    font-size: 30px;
+    font-family: Arial;
+}
+
+.Container form {
+    margin-left: 150px;
+    font-size: 18px;
+    font-family: Arial;
+}
+
+.Container form div {
+    margin-bottom: 10px;
+}
+
+.Container form div label {
+    text-align: end;
+}
+
+.Container form .UserEmail input {
+    margin-left: 32px;
+}
+
+.Container form label {
+    color: #0a58ca;
+    font-weight: 300;
+
+}
+
+.Container .CheckHobby .ListHobby {
+    margin-left: 80px;
+    width: 500px;
+    margin-bottom: 10px;
+}
+
+.ListHobby table td {
+    padding-right: 30px;
+    padding-bottom: 10px;
+}
+
+form button:not(:last-child) {
+    margin-left: 80px;
+}

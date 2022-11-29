@@ -1,0 +1,131 @@
+padding {
+    padding: 0;
+    margin:0;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+/*Css bàn cờ vua*/
+.chess__table {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 50px;
+}
+.chess__table h1 {
+    text-align: center;
+    margin-bottom: -20px;
+}
+/*Padding vào dưới cùng bảng*/
+.padding__table  th{
+    padding-bottom: 20px;
+}
+.chess {
+    border: 2px solid #333;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    background-color: #ffb300;
+    border-collapse: collapse;
+}
+/*Start: Bắt đầu chia màu cho ô*/
+.chess tr:nth-child(2n+1) td:nth-child(2n+1) {
+    background-color: #fff;
+}
+.chess tr:nth-child(2n+2) td:nth-child(2n+2) {
+    background-color: #fff;
+}
+.chess tr:nth-child(2n+2) td:nth-child(2n+1) {
+    background-color: #000;
+}
+.chess tr:nth-child(2n+1) td:nth-child(2n+2) {
+    background-color: #000;
+}
+/*End: Kết thúc chia màu cho ô*/
+.chess .col th {
+    padding: 15px 25px;
+}
+/*Padding vào ngoài cùng cột bảng*/
+.chess .col .element__nineth {
+    padding-right: 0px;
+}
+.chess .row td {
+}
+.chess .row th {
+    padding: 20px 15px;
+  }
+.chess .row td{
+    padding: 20px 25px;
+}
+.chess .row__last td {
+}
+.chess .row .box__last {
+}
+
+/*Css lịch tháng 10*/
+.dayOfWeek {
+}
+.calendar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.dayOfWeek .first__row .sunday {
+    background-color: red;
+    color: white;
+}
+.dayOfWeek .first__row .saturday {
+    background-color: blue;
+    color: white;
+}
+.dayOfWeek .first__row .normal--day {
+    background-color: #ffb300;
+    color: white;
+}
+.dayOfWeek .first__row th {
+    padding: 10px 0px;
+    min-width: 87.5px;
+
+}
+.dayOfWeek .second__row td{
+    padding: 5px 0;
+}
+.dayOfWeek .second__row td {
+    text-align: center;
+}
+.dayOfWeek .second__row td:nth-child(1) {
+    color: red;
+}
+.dayOfWeek .second__row td:nth-child(n) {
+    width: 85px;
+}
+.dayOfWeek .second__row td:nth-child(7) {
+    color: blue;
+}
+label span {
+    font-weight: 100;
+    font-size: 10px;
+}
+.dayOfWeek tr:nth-child(n+2) th {
+    border: 2px solid #333333;
+    border-collapse: collapse;
+    padding: 10px 0;
+}
+.small__table {
+    border: 2px solid #838383;
+    border-collapse: collapse;
+}
+.small__table tr th {
+    width: 85px;
+    height: 40px;
+
+}
+.small__table tr th:nth-child(n+2) {
+    border-left: 2px solid #838383;
+}
+.small__table tr:nth-child(n+2) th {
+    border-top: 2px solid #838383;
+}
+
+

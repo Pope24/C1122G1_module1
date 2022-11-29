@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Play chess</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="chess__table">
+      <div>
+        <h1>Bàn cờ vua</h1>
+        <table class="chess">
+          <tr class="col">
+            <th></th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+            <th>7</th>
+            <th>8</th>
+            <th class="element__nineth"></th>
+          </tr>
+          <tr class="row">
+            <th>A</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="box__last"></td>
+          </tr>
+          <tr class="row">
+            <th>B</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="box__last"></td>
+          </tr><br>
+          <tr class="row">
+            <th>C</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="box__last"></td>
+          </tr>
+          <tr class="row">
+            <th>D</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="box__last"></td>
+          </tr><br>
+          <tr class="row">
+            <th>E</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="box__last"></td>
+          </tr>
+          <tr class="row">
+            <th>F</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="box__last"></td>
+          </tr><br>
+          <tr class="row">
+            <th>G</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="box__last"></td>
+          </tr><br>
+          <tr class="row__last row">
+            <th>H</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="box__last"></td>
+          </tr>
+          <!--        Padding thêm vào cuối bảng-->
+          <tr class="padding__table">
+            <th></th>
+          </tr>
+        </table>
+      </div>
+  </div>
+  <div class="calendar">
+    <div>
+      <h1>Lịch tháng 10- October</h1>
+      <table class="dayOfWeek">
+        <tr class="first__row">
+          <th class="sunday">C.Nhật</th>
+          <th class="normal--day">T.Hai</th>
+          <th class="normal--day">T.Ba</th>
+          <th class="normal--day">T.Tư</th>
+          <th class="normal--day">T.Năm</th>
+          <th class="normal--day">T.Sáu</th>
+          <th class="saturday">T.Bảy</th>
+        </tr>
+        <tr class="second__row">
+          <td>Sun</td>
+          <td>Mon</td>
+          <td>Tue</td>
+          <td>Wed</td>
+          <td>Thu</td>
+          <td>Fri</td>
+          <td>Sat</td>
+        </tr>
+        <table class="small__table">
+          <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th>1<label><span>13</span></label></th>
+            <th>2<label><span>14</span></label></th>
+            <th>3<label><span>15</span></label></th>
+          </tr>
+          <tr>
+            <th>4<label><span>16</span></label></th>
+            <th>5<label><span>17</span></label></th>
+            <th>6<label><span>18</span></label></th>
+            <th>7<label><span>19</span></label></th>
+            <th>8<label><span>20</span></label></th>
+            <th>9<label><span>21</span></label></th>
+            <th>10<label><span>22</span></label></th>
+          </tr>
+          <tr>
+            <th>11<label><span>23</span></label></th>
+            <th>12<label><span>24</span></label></th>
+            <th>13<label><span>25</span></label></th>
+            <th>14<label><span>26</span></label></th>
+            <th>15<label><span>27</span></label></th>
+            <th>16<label><span>28</span></label></th>
+            <th>17<label><span>29</span></label></th>
+          </tr>
+          <tr>
+            <th>18<label><span>1.9</span></label></th>
+            <th>19<label><span>2</span></label></th>
+            <th>20<label><span>3</span></label></th>
+            <th>21<label><span>4</span></label></th>
+            <th>22<label><span>5</span></label></th>
+            <th>23<label><span>6</span></label></th>
+            <th>24<label><span>7</span></label></th>
+          </tr>
+          <tr>
+            <th>25<label><span>8</span></label></th>
+            <th>26<label><span>9</span></label></th>
+            <th>27<label><span>10</span></label></th>
+            <th>28<label><span>11</span></label></th>
+            <th>29<label><span>12</span></label></th>
+            <th>30<label><span>13</span></label></th>
+            <th>31<label><span>14</span></label></th>
+          </tr>
+        </table>
+      </table>
+    </div>
+  </div>
+</body>
+</html>

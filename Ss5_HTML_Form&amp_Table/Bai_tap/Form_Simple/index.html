@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+<div class="Container">
+    <div class="TitleContent">
+        <p>Sở thích của bạn</p>
+    </div>
+    <form onsubmit="return false;">
+        <div class="UserName">
+            <label>Họ và tên</label>
+            <input name="yourname" type="text"/>
+        </div>
+        <div class="UserEmail">
+            <label>Email</label>
+            <input name="email" type="email"/><br>
+        </div>
+        <div class="CheckHobby">
+            <label>Sở thích</label>
+            <div class="ListHobby">
+                <table>
+                    <tr>
+                        <td><input name="hobby" type="checkbox">Thể thao</td>
+                        <td><input name="hobby" type="checkbox">Âm nhạc</td>
+                        <td><input name="hobby" type="checkbox">Đọc sách</td>
+                    </tr>
+                    <tr>
+                        <td><input name="hobby" type="checkbox">Lướt web</td>
+                        <td><input name="hobby" type="checkbox">Chơi game</td>
+                        <td><input name="hobby" type="checkbox">Điện ảnh</td>
+                    </tr>
+                    <tr>
+                        <td><input name="hobby" type="checkbox">Du lịch</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <button type="submit">Gửi thông tin</button>
+        <button type="reset">Nhập lại</button>
+    </form>
+</div>
+</body>
+</html>

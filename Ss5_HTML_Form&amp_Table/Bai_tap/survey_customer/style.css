@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+}
+.header {
+    padding: 10px 10px 15px;
+    border-bottom: #333 1px dashed;
+}
+.header h2 {
+    font-family: "Lucida Sans";
+    font-size: 20.8px;
+    margin-bottom: 5px;
+}
+.header .title--small {
+    font-size: 95%;
+    opacity: 0.8;
+}
+form {
+    padding-left: 10px;
+}
+.range--age, .range--income, .Sexist .Answer--sex,
+.purchase--product .Answer--product, .time--purchase .Answer__time--purchase,
+.price .Answer--price, .new--features .Answer--feature {
+    padding: 10px 0px;
+    font-weight: bold;
+}
+.range--age .Answer--age, .range--income .Answer--income, {
+    margin-bottom: 5px;
+}
+.range--age select, .range--income select {
+    width: 50%;
+    padding: 2px 0px;
+}
+.Sexist input, .purchase--product input, .time--purchase input {
+    margin: 5px 0px;
+}
+.price .dollar {
+    width: 40px;
+}
+.price .cents {
+    width: 20px;
+}
+.price .explain {
+    margin-left: 12px;
+}
+.new--features input {
+    width: 99%;
+    height: 150px;
+}
+.rate--agreement .Clam-Question {
+    padding: 10px 0px;
+    font-weight: bold;
+    opacity: 0.6;
+}
+.table-rate  {
+    border: #afafaf 1px solid;
+    width: 99%;
+
+}
+.table-rate thead {
+    height: 37.8px;
+    background-color: #dedede;
+}
+.table-rate tbody td, .table-rate tbody th {
+    border-top: #afafaf 1px solid;
+}
+.table-rate tbody td, .table-rate thead td {
+    border-left: #afafaf 1px solid;
+    text-align: center;
+}
+table tbody th {
+    text-align: start;
+}
+form .submitBtn input {
+    padding: 1px 7px;
+    margin:20px 0px;
+}
+
+
+
+
+
