@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+.input-group-prepend {
+    margin-top: 10px;
+}
+
+.Question {
+    border: 1px solid #333;
+    width: 50%;
+    margin-top: 50px;
+    padding: 20px;
+    box-shadow: 1px 1px 3px 1px #333333;
+}
+
+.input-group-prepend input {
+    flex: 1;
+}
+
+button.btn {
+    margin-top: 10px;
+    outline: none;
+    border: none;
+    box-shadow: 1px 1px 3px 1px #333333;
+}
