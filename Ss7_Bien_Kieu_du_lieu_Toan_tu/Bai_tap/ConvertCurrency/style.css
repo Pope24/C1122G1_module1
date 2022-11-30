@@ -1,0 +1,23 @@
+.Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Container .InfoData {
+    margin: 0 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+button {
+    background: #8f82cf;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+}
+
+#result {
+    color: #2752ff;
+    margin-left: 32.5%;
+}

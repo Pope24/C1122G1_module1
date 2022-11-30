@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Convert Currency</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="Container">
+    <div class="InfoData">
+        <label>Amount</label>
+        <div class="AmountMoneyInput">
+            <input id="amountMoney" type="text">
+        </div>
+    </div>
+    <div class="InfoData">
+        <label>From Currency</label>
+        <div>
+            <select id="fromCurrency">
+                <option value="VietNam">VietNam</option>
+                <option value="USD">USD</option>
+            </select>
+        </div>
+    </div>
+    <div class="InfoData">
+        <label>From Currency</label>
+        <div class="SelectCountry">
+            <select id="toCurrency">
+                <option value="USD">USD</option>
+                <option value="VietNam">VietNam</option>
+            </select>
+        </div>
+    </div>
+    <button onclick="handleConvertMoney()">Convert</button>
+</div>
+<div id="result">
+</div>
+</body>
+<script src="./index.js"></script>
+</html>
