@@ -64,6 +64,7 @@ function handleExercise7() {
         );
     }
 }
+// Exercise 8: Kiểm tra tuổi.
 function handleExercise8() {
     let yourAge = parseInt(document.getElementById('yourAge').value);
     if (yourAge > 0 && yourAge <120) {
@@ -73,6 +74,7 @@ function handleExercise8() {
         alert("Age failed !!");
     }
 }
+// Exercise 9: Kiểm tra tam giác.
 function handleExercise9() {
     let aTriangle = parseFloat(document.getElementById('aNumberTriangle').value);
     let bTriangle = parseFloat(document.getElementById('bNumberTriangle').value);
@@ -90,6 +92,7 @@ function handleExercise9() {
         alert("There are not edge triangle.");
     }
 }
+// Exercise 10: Viết chương trình tính giá điện.
 function handleExercise10() {
     let amountKwh = parseFloat(document.getElementById('yourKwh').value);
     let amountMoneyPay;
@@ -101,6 +104,7 @@ function handleExercise10() {
         alert("Amount money need to pay : " + amountMoneyPay + " vnd")
     }
 }
+//Exercise 11:  Tính thuế thu nhập cá nhân.
 function handleExercise11() {
     let yourSalary = parseInt(document.getElementById("yourSalary").value);
     if (yourSalary < 0 || isNaN(yourSalary)) {
@@ -121,6 +125,7 @@ function handleExercise11() {
         }
     }
 }
+// Exercise 12: Tính lãi suất ngân hàng cho vay.
 function handleExercise12() {
     let moneyLoan = parseInt(document.getElementById("moneyLoan").value);
     let monthLoan = parseInt(document.getElementById("monthLoan").value);
