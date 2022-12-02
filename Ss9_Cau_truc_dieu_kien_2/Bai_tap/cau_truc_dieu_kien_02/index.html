@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập 02</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+  <div class="PracticeExercise">
+    <h3>Exercise 3: Tính diện tích hình vuông.</h3>
+    <div class="form-group">
+      <label>Cạnh a</label>
+      <input type="text" class="form-control" id="squareEdge" placeholder="Input a number">
+    </div>
+    <button onclick="handleExercise3()" class="btn btn-primary">Submit</button>
+  </div>
+  <div class="PracticeExercise">
+    <h3>Exercise 4: Tính diện tích hình chữ nhật.</h3>
+    <div class="form-group">
+      <label>Cạnh a</label>
+      <input type="text" class="form-control" placeholder="Input a" id="aEdgeRectangle">
+    </div>
+    <div class="form-group">
+      <label>Cạnh b</label>
+      <input type="text" class="form-control" placeholder="Input b" id="bEdgeRectangle">
+    </div>
+    <button onclick="handleExercise4()" class="btn btn-primary">Submit</button>
+  </div>
+  <div class="PracticeExercise">
+    <h3>Exercise 5: Tính diện tích tam giác vuông.</h3>
+    <div class="form-group">
+      <label>Cạnh a</label>
+      <input type="text" class="form-control" placeholder="Input a" id="aEdgeTriangle">
+    </div>
+    <div class="form-group">
+      <label>Cạnh b</label>
+      <input type="text" class="form-control" placeholder="Input b" id="bEdgeTriangle">
+    </div>
+    <button onclick="handleExercise5()" class="btn btn-primary">Submit</button>
+  </div>
+  <div class="PracticeExercise">
+    <h3>Exercise 6: Giải phương trình bậc 1.</h3>
+    <div class="form-group">
+      <label>A number</label>
+      <input type="text" class="form-control" placeholder="Input a number" id="aNumberEquation1">
+    </div>
+    <div class="form-group">
+      <label >B number</label>
+      <input type="text" class="form-control" placeholder="Input b number" id="bNumberEquation1">
+    </div>
+    <button onclick="handleExercise6()" class="btn btn-primary">Submit</button>
+  </div>
+  <div class="PracticeExercise">
+    <h3>Exercise 7: Giải phương trình bậc 2.</h3>
+    <div class="form-group">
+      <label>A number</label>
+      <input type="text" class="form-control" placeholder="Input a number" id="aNumberEquation2">
+    </div>
+    <div class="form-group">
+      <label >B number</label>
+      <input type="text" class="form-control" placeholder="Input b number" id="bNumberEquation2">
+    </div>
+    <div class="form-group">
+      <label >C number</label>
+      <input type="text" class="form-control" placeholder="Input c number" id="cNumberEquation2">
+    </div>
+    <button onclick="handleExercise7()" class="btn btn-primary">Submit</button>
+  </div>
+  <div class="PracticeExercise">
+    <h3>Exercise 8: Kiểm tra tuổi.</h3>
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Input your age" id="yourAge">
+    </div>
+    <button onclick="handleExercise8()" class="btn btn-primary">Submit</button>
+  </div>
+  <div class="PracticeExercise">
+    <h3>Exercise 9: Kiểm tra tam giác.</h3>
+      <div class="form-group">
+        <label>A number</label>
+        <input type="text" class="form-control" placeholder="Input a number" id="aNumberTriangle">
+      </div>
+      <div class="form-group">
+        <label >B number</label>
+        <input type="text" class="form-control" placeholder="Input b number" id="bNumberTriangle">
+      </div>
+      <div class="form-group">
+        <label >C number</label>
+        <input type="text" class="form-control" placeholder="Input c number" id="cNumberTriangle">
+      </div>
+      <button onclick="handleExercise9()" class="btn btn-primary">Submit</button>
+    </div>
+    <div class="PracticeExercise">
+      <h3>Exercise 10: Viết chương trình tính giá điện.</h3>
+      <div class="form-group">
+        <label>1 Kwh/3.500 Vnd</label>
+        <input type="text" class="form-control" placeholder="Input your KWh" id="yourKwh">
+      </div>
+      <button onclick="handleExercise10()" class="btn btn-primary">Submit</button>
+    </div>
+    <div class="PracticeExercise">
+      <h3>Exercise 11:  Tính thuế thu nhập cá nhân.</h3>
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Input your salary" id="yourSalary">
+      </div>
+      <button onclick="handleExercise11()" class="btn btn-primary">Submit</button>
+    </div>
+    <div class="PracticeExercise">
+      <h3>Exercise 12: Tính lãi suất ngân hàng cho vay.</h3>
+        <div class="form-group">
+          <label>Your money need to loan</label>
+          <input type="text" class="form-control" placeholder="Input your money need to loan" id="moneyLoan">
+        </div>
+        <div class="form-group">
+          <label >Time need to loan (month)</label>
+          <input type="text" class="form-control" placeholder="Input your month need to loan" id="monthLoan">
+        </div>
+        <div class="form-group">
+          <label >Interest rate of bank</label>
+          <input type="text" class="form-control" placeholder="Input interest rate of bank" id="interestRate">
+        </div>
+        <button onclick="handleExercise12()" class="btn btn-primary">Submit</button>
+      </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="./index.js"></script>
+</html>
