@@ -1,0 +1,12 @@
+.Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Exercise {
+    margin: 20px 0;
+    padding: 20px 20px;
+    width: 60%;
+    background-color: #e9ecef;
+}
