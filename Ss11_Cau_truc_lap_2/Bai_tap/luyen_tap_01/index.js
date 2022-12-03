@@ -107,6 +107,7 @@ function handleExercise7() {
     }
     showResult.innerText = resultText;
 }
+//Game đoán số.
 function handleExercise8() {
     let startPoint = parseInt(prompt("Điểm bắt đầu trong khoảng bạn muốn đoán ?"));
     let endPoint = parseInt(prompt("Điểm cuối cùng trong khoảng bạn muốn đoán ?"));
