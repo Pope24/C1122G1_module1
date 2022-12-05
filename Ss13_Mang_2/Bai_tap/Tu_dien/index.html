@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ điển</title>
+</head>
+<body>
+<div id="container">
+  <input type="text" id="vocabulary" placeholder="Inpur your vocabulary need to find"><br />
+  <div id="result"></div>
+  <button onclick="handleTranslate()">Translate</button>
+</div>
+</body>
+<script>
+  function handleTranslate() {
+    let englishArr = ["Hello", "Goodbye", "Homework", "Shirt", "Skirt", "Laptop"];
+    let vietNamArr = ["Xin chào", "Tạm biệt", "Bài tập", "Áo", "Quần", "Máy tính"];
+    let inputValue = document.getElementById("vocabulary").value;
+    let showResult = document.getElementById("result");
+    for (let i = 0; i < vietNamArr.length; i++) {
+      if (vietNamArr[i] === inputValue) {
+        showResult.innerText = englishArr[i];
+        break;
+      }
+      else {
+        showResult.innerText = "Không tìm thấy";
+      }
+    }
+  }
+</script>
+</html>
