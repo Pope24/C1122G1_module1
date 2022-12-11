@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="Draw_Image">
+    <h2>I. Yêu cầu 1 (Vẽ hình *)</h2>
+    <div class="ResultImage">
+        <h3>Hình chữ nhật rỗng</h3>
+        <div id="resultImg1"></div>
+    </div>
+    <div class="ResultImage">
+        <h3>Hình tam giác vuông rỗng</h3>
+        <div id="resultImg2"></div>
+    </div>
+    <div class="ResultImage">
+        <h3>Hình tam giác cân</h3>
+        <div id="resultImg3"></div>
+    </div>
+    <div class="ResultImage">
+        <h3>Hình tam giác cân rỗng</h3>
+        <div id="resultImg4"></div>
+    </div>
+</div>
+<div class="Exercise2">
+    <div><h2>________________________________________________________________________</h2></div>
+    <h2>II. Yêu cầu 2 ( If và switch case)</h2>
+    <h3>Bài 1: Viết một chương trình để nhập lương nhân viên, tính thuế thu nhập và lương ròng </h3>
+    <input id="yourSalary" placeholder="Your salary" type="text">
+    <button onclick="calculateSalary()">Submit</button>
+    <br>
+    <h3>Bài 2: Viết chương trình kiểm tra một ký tự trong bảng chữ cái tiếng anh là nguyên âm hay phụ âm. </h3>
+    <input id="yourCharacter" placeholder="Your character" type="text">
+    <button onclick="checkCharacter()">Submit</button>
+</div>
+<div class="Exercise3">
+    <div><h2>________________________________________________________________________</h2></div>
+
+    <h2>III. Yêu cầu 3 (Mảng và Loop)</h2>
+    <h3>Bài 1: Cho mảng a chỉ chứa các số nguyên
+        Xây dựng mảng b là prefix sums của mảng a cụ thể theo công thức:
+    </h3>
+    <input id="totalElm" placeholder="Input total element of array" type="text">
+    <button onclick="calculateArray()">Submit</button>
+    <br>
+    <h3>Bài 2: Cho 2 mảng A và B chứa số nguyên. Tìm ra một mảng đã được sắp xếp chứa các phần tử xuất hiện trong mảng B
+        nhưng lại không xuất hiện A
+    </h3>
+    <input id="totalElmArr1" placeholder="Input total element of array 1" type="text">
+    <input id="totalElmArr2" placeholder="Input total element of array 2" type="text">
+
+    <button onclick="getElmSimilarArray()">Submit</button>
+    <br>
+    <h3>Bài 3: Cho một danh sách các phân số, hãy tìm chỉ số của phân số lớn nhất (đếm từ 0)
+        Giả định rằng không có các phân số bằng nhau trong tập đầu vào
+    </h3>
+    <input id="listFraction" placeholder="Input total list fraction" type="text">
+    <button onclick="getFraction()">Submit</button>
+    <br>
+    <h3>Bài 4: Viết một chương trình nhập một số từ bàn phím và in ra màn hình bằng chữ. Ví dụ 1234, kết quả in ra màn
+        hình là
+        một hai ba bốn.
+    </h3>
+    <input id="intNumber" placeholder="Input your integer number" type="text">
+    <button onclick="handleTextNumber()">Submit</button>
+    <br>
+    <h3>Bài 5: Menu của gọi loại thức uống
+    </h3>
+    <p>1 - cafe (12k).</p>
+    <p>2 - cam vắt (20k).</p>
+    <p>3 - nước ép cà rốt (18k).</p>
+    <p>4 - nước ép cà chua (20k).</p>
+    <p>5 - nước lọc (7k).</p>
+    <p>6 - nước dừa (20k).</p>
+    <div style="display: flex;">
+        <h4 style="margin-right: 85px">Type of drink</h4>
+        <h4>Amount of drink</h4>
+    </div>
+    <div>
+        <input class="typeOfDrink" placeholder="Input your type of drink" type="text">
+        <input class="amountDrink" placeholder="Input your amount of drink" type="text">
+    </div>
+    <div>
+        <input class="typeOfDrink" placeholder="Input your type another" type="text">
+        <input class="amountDrink" placeholder="Input your amount of drink" type="text">
+    </div>
+    <div>
+        <input class="typeOfDrink" placeholder="Input your type another" type="text">
+        <input class="amountDrink" placeholder="Input your amount of drink" type="text">
+    </div>
+    <div>
+        <input class="typeOfDrink" placeholder="Input your type another" type="text">
+        <input class="amountDrink" placeholder="Input your amount of drink" type="text">
+    </div>
+    <button onclick="handleCallDrink()">Submit</button>
+    <br>
+</div>
+<div class="Exercise4">
+    <div><h2>________________________________________________________________________</h2></div>
+
+    <h2>IV. Yêu cầu 4 (String)</h2>
+    <h3>Bài 1: Viết một hàm chuẩn hóa xâu ký tự: biến đổi xâu ký tự thành xâu sao cho trong xâu không có 2 dấu cách liền
+        nhau và bắt đầu mỗi từ phải in hoa. Ví dụ tRuong TaN HAI => Truong Tan Hai.
+    </h3>
+    <input id="switchString" placeholder="Input your string need to switch." type="text">
+    <button onclick="switchString()">Submit</button>
+    <br>
+    <h3>Bài 2: Cho xâu kí tự. Hãy đếm số lượng kí tự khác nhau trong xâu đó.
+    </h3>
+    <input id="checkString" placeholder="Input your string need to check." type="text">
+    <button onclick="checkString()">Submit</button>
+    <br>
+    <h3>Bài 3: Cho hai xâu kí tự, tìm số lượng kí tự chung giữa chúng.
+    </h3>
+    <input id="string1" placeholder="Input your string need to find." type="text">
+    <input id="string2" placeholder="Input your string need to find." type="text">
+    <button onclick="findCharacterSimilar()">Submit</button>
+    <br>
+</div>
+<div class="Exercise4">
+    <div><h2>________________________________________________________________________</h2></div>
+
+    <h2>V. Yêu cầu 5 (Mảng 2 chiều)</h2>
+    <h3>Bài 1: Viết hàm tính tổng các số chẵn trong ma trận có kích thước m*n. Với m, n là các số nhập từ bàn phím.</h3>
+    <input id="rowOfArray" placeholder="Input your amount row in array" type="text">
+    <input id="colOfArray" placeholder="Input your amount column in array" type="text">
+    <button onclick="calculateEvenNumberInArray()">Submit</button>
+    <br>
+    <h3>Bài 2: Viết hàm liệt kê các số nguyên tố trong mảng 2 chiều, đếm các số nguyên tố có trong mảng đó.</h3>
+    <input id="rowOfPrimeArray" placeholder="Input your amount row in array" type="text">
+    <input id="colOfPrimeArray" placeholder="Input your amount column in array" type="text">
+    <button onclick="listedPrimeArray()">Submit</button>
+    <br>
+    <h3>Bài 3: Viết hàm tìm giá trị lớn nhất, nhỏ nhất trong mảng 2 chiều</h3>
+    <input id="rowFindMaxMinArray" placeholder="Input your amount row in array" type="text">
+    <input id="colFindMaxMinArray" placeholder="Input your amount column in array" type="text">
+    <button onclick="findMaxMinInArray()">Submit</button>
+</div>
+<div class="Exercise4">
+    <div><h2>________________________________________________________________________</h2></div>
+
+    <h2>V. Yêu cầu 5 (Mảng 2 chiều)</h2>
+    <h3>Xây dựng ứng dụng cho phép khách hàng thực hiện mua vé số tương tự VIETLOT, mỗi vé sẽ bao gồm 6 số nguyên dương, có thể mua tối đa 4 vé.</h3>
+    <button onclick="clickToSwitchPage()">Click to new page</button>
+</div>
+</body>
+<script src="./index.js"></script>
+</html>
