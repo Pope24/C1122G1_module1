@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manager Staff</title>
+</head>
+<style>
+    .Container {
+        display: flex;
+
+    }
+    table thead{
+        background-color: rgba(234, 67, 53, 1);
+        color: #ffffff;
+    }
+    table, td, th {
+        border-collapse: collapse;
+        border: 1px solid #333333;;
+    }
+    td, th {
+        width: 150px;
+        height: 25px;
+        text-align: center;
+    }
+    .SelectBtn {
+        margin-left: 30px;
+        padding-left: 15px;
+        border-left: 1px solid #333333;
+
+    }
+    button {
+        width: 170px;
+        height: 35px;
+        border: none;
+        outline: none;
+        background-color: rgba(234, 67, 53, 1);
+        color: #fff;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    button:hover {
+        cursor: pointer;
+        background-color: #ffffff;
+        border-radius: 4px;
+        border: 2px solid rgb(234, 74, 53);
+        color: rgb(234, 74, 53);
+    }
+    #formAdd,
+    #formEdit{
+        width: 99%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border:2px solid #a11e1e;
+        margin-top: 30px;
+
+    }
+    #formEdit {
+        position: relative;
+        bottom: 403px;
+    }
+    form#formAdd input,
+    form#formEdit input{
+        height: 30px;
+        width: 300px;
+        margin: 10px 0;
+    }
+    #addMemberBtn,
+    #editMemberBtn {
+        width: 100px;
+        height: 25px;
+        background-color: #ffffff;
+        border-radius: 4px;
+        border: 2px solid rgb(234, 74, 53);
+        color: rgb(234, 74, 53);
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    #addMemberBtn:hover,
+    #editMemberBtn:hover{
+        cursor: pointer;
+        background-color: rgb(234, 74, 53);
+        color: #fff;
+    }
+    .deleteBtn:hover {
+        cursor: pointer;
+        background-color: rgb(234, 74, 53);
+        color: #fff;
+
+    }
+    .hidden {
+        visibility: hidden;
+    }
+</style>
+<body>
+    <div class="Container">
+        <div>
+            <table id="listMember">
+                <thead>
+                <th>STT</th>
+                <th>Full name</th>
+                <th>Date</th>
+                <th>Address</th>
+                <th>Salary</th>
+                <th>Position</th>
+                <th>Delete</th>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="UserId">1</td>
+                    <td>Le Van Chinh</td>
+                    <td>24/02/2003</td>
+                    <td>Quang Binh</td>
+                    <td>60.000.000</td>
+                    <td>Project Manager</td>
+                    <td class="deleteBtn">&#10006</td>
+                </tr>
+                <tr>
+                    <td class="UserId">2</td>
+                    <td>Pham Viet Hiep</td>
+                    <td>14/06/1998</td>
+                    <td>Da Nang</td>
+                    <td>50.000.000</td>
+                    <td>Tester</td>
+                    <td class="deleteBtn">&#10006</td>
+                </tr>
+                <tr>
+                    <td class="UserId">3</td>
+                    <td>Hoang Huynh Duc</td>
+                    <td>04/05/2000</td>
+                    <td>Quang Nam</td>
+                    <td>45.000.000</td>
+                    <td>Tester</td>
+                    <td class="deleteBtn">&#10006</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="SelectBtn">
+            <button onclick="addMoreMember()">Add more</button>
+            <button onclick="editingMember()">Editing</button>
+            <form onsubmit="return false;" id="formAdd" class="hidden">
+                <h3>Form add new member</h3>
+                <input placeholder="Input new name member">
+                <input placeholder="Input new date member">
+                <input placeholder="Input new address member">
+                <input placeholder="Input new salary member">
+                <input placeholder="Input new position member">
+                <button onclick="addMember()" id="addMemberBtn">Add</button>
+            </form>
+            <form onsubmit="return false;" id="formEdit" class="hidden">
+                <h3>Form edit info member</h3>
+                <input placeholder="Input edit name member">
+                <input placeholder="Input edit date member">
+                <input placeholder="Input edit address member">
+                <input placeholder="Input edit salary member">
+                <input placeholder="Input edit position member">
+                <button onclick="editInfoMember()" id="editMemberBtn">Edit</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>
