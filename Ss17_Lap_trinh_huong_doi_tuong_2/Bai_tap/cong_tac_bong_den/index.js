@@ -37,19 +37,19 @@ class SwitchButton{
 }
 
 
-let electricLamp_1 = new ElectricLamp(false);
+let electricLamp1 = new ElectricLamp(false);
 
-let switchButton_1 = new SwitchButton(electricLamp_1,false); // kết nối giữa  công tắc 1 và đèn 1
+let switchButton1 = new SwitchButton(electricLamp1,false); // kết nối giữa  công tắc 1 và đèn 1
 
 function turnOnLamp() {
-    switchButton_1.switchOn();
-    if (electricLamp_1.getStatus() == true) {
+    switchButton1.switchOn();
+    if (electricLamp1.getStatus() == true) {
         alert("Turning on LAMP");
     }
 }
 function turnOffLamp() {
-    switchButton_1.switchOff();
-    if (electricLamp_1.getStatus() == false) {
+    switchButton1.switchOff();
+    if (electricLamp1.getStatus() == false) {
         alert("Turned off LAMP");
     }
 }

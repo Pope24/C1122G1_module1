@@ -12,7 +12,6 @@ let Apple = function () {
         if (this.weight === 0) flag = true;
         return flag;
     }
-
 }
 let Human = function (name, gender, weight) {
     this.name = name;
@@ -54,19 +53,19 @@ let Human = function (name, gender, weight) {
     }
 }
 let apple = new Apple();
-let Eva = new Human("Eva", false, 56);
-let Adam = new Human("Adam", true, 66);
+let eva = new Human("Eva", false, 56);
+let adam = new Human("Adam", true, 66);
 let showResult = document.getElementById("result");
 
 function humanEatApple() {
-    Eva.say("xin chào mọi người.");
-    Adam.say("cũng chào mọi người nha hê hê.");
+    eva.say("xin chào mọi người.");
+    adam.say("cũng chào mọi người nha hê hê.");
     showResult.innerHTML += "Ăn táo chung với chúng mình nhé" + "<br/>";
     showResult.innerHTML += apple.getWeightApple() + "<br/>";
     showResult.innerHTML += "<br/>";
     while (apple.isEmpty() !== true) {
-        eatApple(Eva, apple, showResult);
-        eatApple(Adam, apple, showResult);
+        eatApple(eva, apple, showResult);
+        eatApple(adam, apple, showResult);
     }
 }
 
