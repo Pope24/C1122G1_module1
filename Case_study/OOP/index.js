@@ -64,6 +64,9 @@ function continueBuyTicket(chooseNextOfUser, arrayTicketOfUser, numberInput) {
     if (chooseNextOfUser === 1) {
         if (arrayTicketOfUser.length == 4) {
             alert("Bạn đã mua quá số lần quy định.");
+            for (let i = 0; i < numberInput.length; i++) {
+                numberInput[i].disabled = true;
+            }
         } else {
             alert("Mời bạn nhập số cho vé tiếp theo");
             buyTicket();
