@@ -1,0 +1,40 @@
+html, body,#overView {
+    height: 100%;
+}
+#overView {
+
+}
+#header {
+
+}
+#header img {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: -480px;
+}
+.container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+#main {
+    display: flex;
+    height: 100%;
+}
+#navba {
+    width: 30%;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#navba select {
+    margin-bottom: 30px;
+}
+#content {
+    width: 70%;
+}
