@@ -191,11 +191,14 @@ function getFraction() {
         arrFraction.push(numerators[i] / denominators[i]);
     }
     //Sap xep mang moi theo thu tu giam dan
-    arrFraction.sort().reverse();
-    //Lay chi so dau tien cua so thap phan lon nhat
-    //Math.trunc() se lay phan nguyen cho du so thap phan la bao nhieu
-    arrFraction[0] = Math.trunc((arrFraction[0] - Math.trunc(arrFraction[0])) * 10);
-    alert("Phần thập phân lớn nhất trong dãy thập phân là " + arrFraction[0]);
+    let result = 0;
+    let max = arrFraction[0];
+    for (let i = 0; i < arrFraction.length; i++) {
+        if (arrFraction[i] > max) {
+            result = i;
+        }
+    }
+    alert("Index of max value in array is " + result);
 }
 
 //Bai 4
@@ -247,7 +250,6 @@ function handleCallDrink() {
     for (let i = 0; i < amountDrink.length; i++) {
         let type = parseInt(typeOfDrink[i].value);
         let amountOfType = parseInt(amountDrink[i].value);
-        console.log(type, amountOfType, amountMoney);
         switch (type) {
             case 1:
                 amountMoney += amountOfType * 12000;
@@ -314,32 +316,49 @@ function removeCharacterSimilar(string) {
 
 //Bai 3
 function findCharacterSimilar() {
-    let stringSimilarChar = "";
-    let count = 0;
-    let string1 = document.getElementById("string1").value;
-    let string2 = document.getElementById("string2").value;
-    //Sử dụng hàm hoá những kí tự giống nhau để lọc ra những kí tự riêng biệt không lặp lại
-    string1 = removeCharacterSimilar(string1);
-    string2 = removeCharacterSimilar(string2);
-    console.log(string1, string2);
-    if (string1.length >= string2.length) {
-        for (let i = 0; i < string1.length; i++) {
-            if (string1.indexOf(string2[i]) != -1) {
-                count++;
-                console.log(string2[i]);
-                stringSimilarChar += string2[i];
-            }
-        }
-    } else {
-        for (let i = 0; i < string2.length; i++) {
-            if (string2.indexOf(string1[i]) != -1) {
-                count++;
-                console.log(string1[i]);
-                stringSimilarChar += string1[i];
+    let s1 = document.getElementById("string1").value;
+    let s2 = document.getElementById("string2").value
+    let newS1 = s1;
+    newS1 = newS1.split("");
+    for (let i = 0; i < newS1.length; i++) {
+        for (let j = 0; j < newS1.length; j++) {
+            if (i != j && newS1[i] == newS1[j]) {
+                newS1.splice(j, 1);
             }
         }
     }
-    alert("số lượng kí tự chung giữa chúng là" + count + " đó là " + stringSimilarChar);
+    let repeatedCharS1 = [];
+    let repeatedCharS2 = [];
+    for (let i = 0; i < newS1.length; i++) {
+        let count = 0;
+        for (let j = 0; j < s1.length; j++) {
+            if (s1[j] == newS1[i]) {
+                count++;
+            }
+        }
+        repeatedCharS1.push(count);
+        let count2 = 0;
+        for (let j = 0; j < s2.length; j++) {
+            if (s2[j] == newS1[i]) {
+                count2++;
+            }
+        }
+        repeatedCharS2.push(count2);
+    }
+    let text = "";
+    for (let i = 0; i < newS1.length; i++) {
+        if (repeatedCharS2[i] > repeatedCharS1[i]) {
+            if (repeatedCharS1[i] != 0) {
+                text += newS1[i] + " xuat hien "+ repeatedCharS1[i] + "lan \n";
+            }
+        }
+        else {
+            if (repeatedCharS2[i] != 0) {
+                text += newS1[i] + " xuat hien "+ repeatedCharS2[i] + "lan \n";
+            }
+        }
+    }
+    alert(text)
 }
 
 //V. Yêu cầu 5 (Mảng 2 chiều)
